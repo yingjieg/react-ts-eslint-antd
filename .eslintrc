@@ -1,0 +1,42 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "plugin:prettier/recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2019,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint", "react"],
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single", "avoid-escape"],
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-explicit-any": 1,
+      "@typescript-eslint/no-inferrable-types": [
+        "warn",
+        {
+          "ignoreParameters": true
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": "warn"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+  
